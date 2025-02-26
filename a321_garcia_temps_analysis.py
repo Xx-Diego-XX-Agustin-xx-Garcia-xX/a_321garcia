@@ -9,7 +9,10 @@ import pandas as pd
 temp_data = pd.read_csv("temperature_data.csv", header=0)   # identify the header row
 
 # TODO #2: Use matplotlib to make a line graph
-
+plt.plot(temp_data['Year'], temp_data['Anomaly'], color='gray')
+plt.ylabel('Temperature Anomalies in Celsius')
+plt.xlabel('Years')
+plt.title('Change in Temperatures')
 
 # TODO #3: Plot LOWESS in a line graph
 
